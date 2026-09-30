@@ -1,0 +1,82 @@
+{
+  "run": {
+    "timestamp_utc": "2026-09-06T11:24:35.298746+00:00",
+    "numpy": "2.5.2",
+    "pandas": "3.0.5"
+  },
+  "configuration": {
+    "quadrant": "I",
+    "lon_min": 15.0,
+    "lon_max": 80.0,
+    "lat_abs_max": 0.5,
+    "velocity_min": -150.0,
+    "velocity_max": 300.0,
+    "search_min": 15.0,
+    "search_max": 260.0,
+    "threshold_method": "absolute",
+    "absolute_k": 10.0,
+    "peak_fraction": 0.2,
+    "min_channels": 3,
+    "lon_bin_deg": 0.25,
+    "calibrate_edge_bias": true,
+    "calib_lon_min": 70.0
+  },
+  "adopted_constants": {
+    "R0_kpc": 8.15,
+    "R0_err_kpc": 0.15,
+    "Theta0_kms": 236.0,
+    "Theta0_err_kms": 7.0,
+    "G_kpc_kms2_per_Msun": 4.30091e-06,
+    "nu0_MHz": 1420.405752
+  },
+  "data": {
+    "survey": "HI4PI (Ben Bekhti et al. 2016, A&A 594, A116)",
+    "cubes": [
+      {
+        "name": "CAR_E01",
+        "path": "mw_rotation_results/raw/CAR_E01.fits",
+        "sha256": "04b70693289f3300d997c4d3ea1fd06f0e99dbdce11403eb9a9331ed7a5d585e",
+        "size_mb": 264.1
+      },
+      {
+        "name": "CAR_E02",
+        "path": "mw_rotation_results/raw/CAR_E02.fits",
+        "sha256": "0954c7e1f3a8ca999103c42371564a5e150fd18cfc801b8c923e47c45611f736",
+        "size_mb": 264.1
+      },
+      {
+        "name": "CAR_E03",
+        "path": "mw_rotation_results/raw/CAR_E03.fits",
+        "sha256": "bdee1ef3edaf4c7beaad82868c175407298dca39dd305f68cbea7a56e4f77d4d",
+        "size_mb": 264.1
+      },
+      {
+        "name": "CAR_E04",
+        "path": "mw_rotation_results/raw/CAR_E04.fits",
+        "sha256": "b4b120b0266fd6888943c3c3289098b0aa706b191bbf2f90df26f24aeb990912",
+        "size_mb": 264.1
+      },
+      {
+        "name": "CAR_E05",
+        "path": "mw_rotation_results/raw/CAR_E05.fits",
+        "sha256": "8b3326659c42d03c411519c24fb074caa0fbc3fdb593be008b6ff3f852162ede",
+        "size_mb": 264.1
+      }
+    ]
+  },
+  "results": {
+    "n_sightlines": 780,
+    "n_sightlines_used": 780,
+    "n_curve_points": 260,
+    "edge_bias_kms": 13.65,
+    "radius_range_kpc": [
+      2.132265839989258,
+      8.024116325939897
+    ],
+    "median_Theta_kms": 233.8481365530052,
+    "Theta_at_outermost_point": 242.52217368283812,
+    "flags": {
+      "OK": 780
+    }
+  }
+}
